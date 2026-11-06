@@ -1,107 +1,140 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Natural GLP-1 Reset | Complete 30-Day Master Guide & Action Kit</title>
-  <meta name="description" content="Discover how to naturally activate your body's fullness hormones with our science-backed 30-day master guide & printable action kit. Only $5.99 USD.">
-  
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <title>The Natural GLP-1 Reset | Science-Backed Whole-Food Satiety</title>
+  <style>
+    :root {
+      --primary: #1b4332;
+      --primary-light: #2d6a4f;
+      --accent: #d8f3dc;
+      --warning-red: #900c3f;
+      --warning-bg: #fff0f3;
+      --text-dark: #1f2937;
+      --text-muted: #4b5563;
+      --bg-light: #f8fafc;
+      --white: #ffffff;
+      --border-color: #e2e8f0;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: var(--text-dark); background-color: var(--bg-light); }
+    
+    .top-bar { background: var(--primary); color: var(--white); text-align: center; padding: 8px 16px; font-size: 0.875rem; font-weight: 600; letter-spacing: 0.5px; }
+    header { background: var(--white); border-bottom: 1px solid var(--border-color); padding: 16px 20px; text-align: center; }
+    .logo { font-size: 1.25rem; font-weight: 800; color: var(--primary); text-transform: uppercase; letter-spacing: 1px; }
+
+    .container { max-width: 800px; margin: 0 auto; padding: 32px 20px; }
+    
+    .hero-headline { font-size: 2.25rem; line-height: 1.25; font-weight: 800; color: #111827; margin-bottom: 16px; text-align: center; }
+    .subheadline { font-size: 1.15rem; color: var(--text-muted); text-align: center; margin-bottom: 32px; font-weight: 400; }
+
+    /* News & Alert Box */
+    .news-card { background: var(--warning-bg); border-left: 4px solid var(--warning-red); padding: 24px; border-radius: 8px; margin-bottom: 32px; }
+    .news-tag { display: inline-block; background: var(--warning-red); color: white; text-transform: uppercase; font-size: 0.75rem; font-weight: 700; padding: 2px 8px; border-radius: 4px; margin-bottom: 12px; }
+    .news-title { font-size: 1.25rem; font-weight: 700; color: var(--warning-red); margin-bottom: 12px; line-height: 1.3; }
+    .news-list { list-style-type: none; padding-left: 0; }
+    .news-list li { margin-bottom: 12px; padding-left: 24px; position: relative; font-size: 0.975rem; color: #374151; }
+    .news-list li::before { content: "⚠️"; position: absolute; left: 0; top: 0; font-size: 0.85rem; }
+
+    .content-body p { margin-bottom: 18px; font-size: 1.05rem; color: #374151; }
+    .content-body h2 { font-size: 1.5rem; font-weight: 700; color: var(--primary); margin: 32px 0 16px 0; border-bottom: 2px solid var(--accent); padding-bottom: 8px; }
+
+    .value-box { background: var(--white); border: 2px solid var(--primary-light); border-radius: 12px; padding: 28px; margin: 36px 0; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+    .value-title { font-size: 1.4rem; font-weight: 800; color: var(--primary); margin-bottom: 16px; text-align: center; }
+    .feature-item { display: flex; align-items: flex-start; margin-bottom: 14px; }
+    .feature-icon { color: var(--primary-light); font-weight: bold; margin-right: 12px; font-size: 1.2rem; }
+
+    .cta-container { text-align: center; margin: 40px 0; }
+    .btn-primary { display: inline-block; background: #2e7d32; color: white; font-size: 1.25rem; font-weight: 700; text-decoration: none; padding: 18px 36px; border-radius: 8px; box-shadow: 0 4px 14px rgba(46, 125, 50, 0.35); transition: background 0.2s ease; width: 100%; max-width: 480px; }
+    .btn-primary:hover { background: #1b5e20; }
+    .price-tag { margin-top: 10px; font-size: 0.9rem; color: var(--text-muted); }
+
+    footer { background: #111827; color: #9ca3af; font-size: 0.775rem; padding: 40px 20px; text-align: center; margin-top: 60px; }
+    footer a { color: #d1d5db; text-decoration: underline; }
+    .disclaimer-box { max-width: 800px; margin: 0 auto; text-align: justify; line-height: 1.5; color: #6b7280; margin-top: 20px; }
+  </style>
 </head>
-<body class="bg-slate-900 text-slate-100 font-sans antialiased selection:bg-emerald-500 selection:text-white">
+<body>
 
-  <!-- ANNOUNCEMENT BAR -->
-  <div class="bg-emerald-950/90 border-b border-emerald-800/60 text-emerald-300 text-xs sm:text-sm py-2 px-4 text-center font-medium sticky top-0 z-50 backdrop-blur-md">
-    📚 <span class="text-emerald-400 font-semibold">Instant Digital Access:</span> Get the complete 30-Day Master Guide &amp; Printable Action Kit for just <span class="text-white font-bold">$5.99 USD</span>.
-  </div>
+  <div class="top-bar">SPECIAL METABOLIC HEALTH REPORT</div>
 
-  <!-- NAVIGATION -->
-  <nav class="max-w-6xl mx-auto px-4 sm:px-6 py-6 flex items-center justify-between">
-    <div class="flex items-center space-x-2">
-      <div class="w-8 h-8 rounded-lg bg-emerald-500 flex items-center justify-center font-black text-slate-950 text-xl">N</div>
-      <span class="font-bold text-lg text-white tracking-tight">Metabolic<span class="text-emerald-400">Blueprint</span></span>
-    </div>
-    <a href="https://buy.stripe.com/your_stripe_payment_link_here" class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-semibold text-sm px-5 py-2.5 rounded-xl transition-all shadow-lg shadow-emerald-500/20">
-      Get Instant Access ($5.99)
-    </a>
-  </nav>
-
-  <!-- HERO SECTION -->
-  <header class="max-w-4xl mx-auto px-4 sm:px-6 pt-12 pb-16 text-center">
-    <div class="inline-flex items-center space-x-2 bg-slate-800/90 border border-slate-700/80 rounded-full px-4 py-1.5 mb-6 text-xs sm:text-sm text-slate-300">
-      <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-      <span>Science-Backed Endocrine Satiety System</span>
-    </div>
-
-    <h1 class="text-3xl sm:text-5xl md:text-6xl font-extrabold text-white tracking-tight leading-tight mb-6">
-      Tired of Constant Hunger &amp; "Food Noise"?<br>
-      <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-400">The Complete 30-Day Master Guide &amp; Action Kit</span>
-    </h1>
-
-    <p class="text-base sm:text-lg text-slate-300 max-w-3xl mx-auto mb-10 leading-relaxed font-light">
-      Awaken your body's natural fullness signals. <em>The Natural GLP-1 Reset</em> is a complete step-by-step master manuscript paired with a printable action kit—including grocery checklists, habit journals, and meal sequencing cards—designed to quiet food noise naturally and sustainably.
-    </p>
-
-    <!-- BUY CTA BUTTON -->
-    <div class="max-w-md mx-auto space-y-3">
-      <a href="https://buy.stripe.com/your_stripe_payment_link_here" class="block w-full py-4 px-8 bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-400 hover:to-teal-400 text-slate-950 font-extrabold text-lg rounded-xl shadow-xl shadow-emerald-500/30 transition-all transform hover:-translate-y-0.5">
-        Get Instant Access Now — Only $5.99 USD →
-      </a>
-      <p class="text-xs text-slate-400">⚡ Instant Digital Download (PDF Master Guide + Printable Bonus Kit) via Secure Stripe Checkout.</p>
-    </div>
+  <header>
+    <div class="logo">The Natural GLP-1 Reset</div>
   </header>
 
-  <!-- NARRATIVE SECTION -->
-  <section class="max-w-3xl mx-auto px-4 sm:px-6 py-12 border-t border-slate-800">
-    <h2 class="text-2xl sm:text-3xl font-bold text-white mb-6">The Exhausting Battle With "Food Noise"</h2>
-    <div class="space-y-4 text-slate-300 font-light leading-relaxed text-base sm:text-lg">
-      <p>
-        If you have ever spent your day locked in a relentless mental soundtrack thinking about your next meal while still finishing your current one, please know this: <strong class="text-white font-medium">it is not a lack of willpower, and it is not a moral failure.</strong>
-      </p>
-      <p>
-        That constant craving is driven by evolutionary survival pathways. When modern diets leave our true cellular and digestive nutrient cues unfulfilled, the brain believes food is scarce, amplifying anxiety and obsessive thoughts around eating.
-      </p>
-      <p>
-        While modern weight-loss medications have shown what life feels like when those signals finally quiet down, they often bring worries about lifelong dependence, uncomfortable side effects, and loss of lean muscle. There is a better way. By activating your body's native L-cells and incretin hormones, you can restore metabolic harmony naturally.
-      </p>
-    </div>
-  </section>
+  <div class="container">
+    
+    <h1 class="hero-headline">Beyond Synthetic Injections: How Whole Foods Trigger Your Body’s Natural Fullness Hormone</h1>
+    <p class="subheadline">Why thousands are turning to gut-signaling biology to trigger natural satiety—without chemical side effects or muscle depletion.</p>
 
-  <!-- WHAT'S INSIDE VALUE STACK -->
-  <section class="max-w-5xl mx-auto px-4 sm:px-6 py-16 border-t border-slate-800">
-    <div class="text-center max-w-2xl mx-auto mb-12">
-      <h2 class="text-2xl sm:text-4xl font-extrabold text-white mb-4">What You Get in the $5.99 Master Kit</h2>
-      <p class="text-slate-400 text-sm sm:text-base">An exhaustive, multi-module digital suite designed for immediate practical execution.</p>
+    <!-- Ad-Compliant News Hazards Box -->
+    <div class="news-card">
+      <span class="news-tag">Health Headlines & Emerging Concerns</span>
+      <div class="news-title">Reports Highlight Unintended Consequences of Rapid Synthetic Weight Loss</div>
+      <p style="font-size:0.925rem; color:#4b5563; margin-bottom:12px;">Recent coverage across major health outlets has drawn attention to significant physiological trade-offs reported by individuals using chemical weight-loss compounds:</p>
+      <ul class="news-list">
+        <li><strong>Facial Fat & Tissue Depletion ("Facial Aging"):</strong> Rapid fat loss from synthetic appetite suppression often strips structural facial volume, leading to hollowed cheeks and premature sagging skin.</li>
+        <li><strong>Bone Density & Lean Muscle Erosion:</strong> Clinical reports indicate that extreme weight loss driven by severe appetite suppression can compromise bone mineral density and accelerate lean muscle mass breakdown.</li>
+        <li><strong>Pelvic Floor & Soft Tissue Weakening:</strong> Rapid loss of lean connective muscle and chronic gastrointestinal strain have been highlighted by wellness practitioners as factors contributing to pelvic floor dysfunction and soft-tissue laxity in women.</li>
+      </ul>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <div class="bg-slate-800/60 border border-slate-700/80 rounded-2xl p-6 sm:p-8">
-        <div class="text-emerald-400 font-bold text-sm mb-2">CORE MANUAL</div>
-        <h3 class="text-xl font-bold text-white mb-3">The Natural GLP-1 Reset: Master Guide</h3>
-        <p class="text-slate-300 text-sm leading-relaxed mb-4">
-          Complete 17-chapter master manuscript covering L-cell endocrinology, soluble viscous fiber mechanisms, GPR120 fatty acid receptors, *Akkermansia* microbiome science, and 28-day recipe suites.
-        </p>
-        <span class="text-xs text-slate-400 font-medium">Value: $29.00</span>
+    <div class="content-body">
+      <h2>Understanding Your Body's Built-In Satiety Switch</h2>
+      <p>When you consume whole foods rich in specific fermentable fibers and healthy fats, your intestinal L-cells naturally release <strong>Glucagon-Like Peptide-1 (GLP-1)</strong>. This master satiety hormone signals your brain that you are full, slows gastric emptying naturally, and stabilizes post-meal blood glucose.</p>
+      
+      <p>However, modern processed foods bypass these natural signaling pathways, leading to constant hunger signals, blood sugar spikes, and persistent "food noise."</p>
+
+      <h2>A Natural, Whole-Food Approach to Fullness</h2>
+      <p><strong>The Natural GLP-1 Reset</strong> is a comprehensive, 17-chapter digital master guide designed to optimize your body's natural hormone production through strategic nutrition:</p>
+
+      <ul>
+        <li><strong>Targeted Fiber & Nutrient Protocols:</strong> How specific dietary fibers trigger L-cell exocytosis.</li>
+        <li><strong>Lean Muscle Preservation Strategy:</strong> Incorporating nutrient-dense whole proteins—including grass-fed beef, pork, bison, and goat—to protect lean tissue and bone density during weight management.</li>
+        <li><strong>Microbiome Support:</strong> Nourishing key gut bacteria like <em>Akkermansia muciniphila</em> to support long-term metabolic health.</li>
+      </ul>
+
+      <div class="value-box">
+        <div class="value-title">What You'll Receive in the Digital Kit</div>
+        
+        <div class="feature-item">
+          <span class="feature-icon">✓</span>
+          <div><strong>17-Chapter Master Guide PDF:</strong> The complete, step-by-step nutrition and metabolic protocol.</div>
+        </div>
+
+        <div class="feature-item">
+          <span class="feature-icon">✓</span>
+          <div><strong>3-Part Printable Action Kit:</strong> Interactive grocery shopping sheets, daily habit tracker, and quick-reference protocol cards.</div>
+        </div>
+
+        <div class="feature-item">
+          <span class="feature-icon">✓</span>
+          <div><strong>Instant Digital Download:</strong> Secure, immediate access on any smartphone, tablet, or computer.</div>
+        </div>
       </div>
 
-      <div class="bg-slate-800/60 border border-slate-700/80 rounded-2xl p-6 sm:p-8">
-        <div class="text-emerald-400 font-bold text-sm mb-2">BONUS PRINTABLE KIT</div>
-        <h3 class="text-xl font-bold text-white mb-3">Action Worksheets &amp; Reference Cards</h3>
-        <p class="text-slate-300 text-sm leading-relaxed mb-4">
-          Includes the GLP-1 Master Grocery Checklist, the 30-Day Satiety &amp; Habit Tracker Journal, and the Pre-Meal Vagus Reset Fridge Card.
-        </p>
-        <span class="text-xs text-slate-400 font-medium">Value: $21.00</span>
+      <div class="cta-container">
+        <a href="YOUR_SHOPIFY_PRODUCT_CHECKOUT_URL" class="btn-primary">Download The Complete Guide Now ($5.99)</a>
+        <div class="price-tag">One-Time Payment • Instant PDF Delivery • 100% Secure Checkout</div>
       </div>
-    </div>
-  </section>
 
-  <!-- FOOTER -->
-  <footer class="max-w-6xl mx-auto px-4 sm:px-6 py-12 border-t border-slate-800 text-center text-xs text-slate-500 space-y-4">
-    <p>&copy; 2026 Metabolic Research Group. All rights reserved. Designed for informational and educational purposes.</p>
-    <p>Secure payments processed via Stripe. Instant automated digital delivery upon purchase.</p>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2026 The Natural GLP-1 Reset. All Rights Reserved.</p>
+    <p style="margin-top: 8px;">
+      <a href="/policies/privacy-policy">Privacy Policy</a> | 
+      <a href="/policies/terms-of-service">Terms of Service</a> | 
+      <a href="/policies/refund-policy">Refund Policy</a>
+    </p>
+
+    <div class="disclaimer-box">
+      <strong>Medical Disclaimer:</strong> The content provided in this guide and landing page is for informational and educational purposes only and is not intended as medical advice, diagnosis, or treatment. Always seek the advice of a qualified healthcare provider regarding any medical condition or dietary changes. This product is a digital educational publication focused on general nutrition and metabolic health wellness.
+    </div>
   </footer>
 
 </body>

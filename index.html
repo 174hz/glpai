@@ -1,183 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Natural GLP-1 Reset | Science-Backed Whole-Food Satiety</title>
-  <style>
-    :root {
-      --primary: #1b4332;
-      --primary-light: #2d6a4f;
-      --accent: #d8f3dc;
-      --warning-red: #8b0000;
-      --warning-bg: #fff5f5;
-      --border-red: #f5c6cb;
-      --text-dark: #1f2937;
-      --text-muted: #4b5563;
-      --bg-light: #f8fafc;
-      --white: #ffffff;
-      --border-color: #e2e8f0;
-    }
-
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: var(--text-dark); background-color: var(--bg-light); }
-    
-    .top-bar { background: var(--primary); color: var(--white); text-align: center; padding: 8px 16px; font-size: 0.875rem; font-weight: 600; letter-spacing: 0.5px; }
-    header { background: var(--white); border-bottom: 1px solid var(--border-color); padding: 16px 20px; text-align: center; }
-    .logo { font-size: 1.25rem; font-weight: 800; color: var(--primary); text-transform: uppercase; letter-spacing: 1px; }
-
-    .container { max-width: 800px; margin: 0 auto; padding: 32px 20px; }
-    
-    .hero-headline { font-size: 2.25rem; line-height: 1.25; font-weight: 800; color: #111827; margin-bottom: 16px; text-align: center; }
-    .subheadline { font-size: 1.15rem; color: var(--text-muted); text-align: center; margin-bottom: 32px; font-weight: 400; }
-
-    /* Product Mockup Container */
-    .product-mockup-container { text-align: center; margin: 24px 0 32px 0; }
-    .product-mockup-container img { max-width: 100%; width: 420px; border-radius: 12px; box-shadow: 0 8px 24px rgba(0,0,0,0.08); border: 1px solid var(--border-color); }
-
-    /* News & Alert Box */
-    .news-card { background: var(--warning-bg); border: 1px solid var(--border-red); border-left: 5px solid var(--warning-red); padding: 24px; border-radius: 8px; margin-bottom: 32px; }
-    .news-tag { display: inline-block; background: var(--warning-red); color: white; text-transform: uppercase; font-size: 0.75rem; font-weight: 700; padding: 3px 10px; border-radius: 4px; margin-bottom: 14px; }
-    .news-title { font-size: 1.2rem; font-weight: 700; color: #721c24; margin-bottom: 16px; line-height: 1.35; }
-    
-    .news-item { margin-bottom: 16px; padding-bottom: 12px; border-bottom: 1px dashed var(--border-red); }
-    .news-item:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
-    .news-item-headline { font-weight: 700; font-size: 1rem; color: #111827; display: block; margin-bottom: 4px; }
-    .news-source { font-size: 0.825rem; color: #721c24; font-weight: 600; text-transform: uppercase; margin-bottom: 6px; display: block; }
-    .news-desc { font-size: 0.925rem; color: #4b5563; line-height: 1.5; }
-
-    .content-body p { margin-bottom: 18px; font-size: 1.05rem; color: #374151; }
-    .content-body h2 { font-size: 1.5rem; font-weight: 700; color: var(--primary); margin: 32px 0 16px 0; border-bottom: 2px solid var(--accent); padding-bottom: 8px; }
-    .content-body ul { margin-left: 20px; margin-bottom: 18px; color: #374151; }
-    .content-body li { margin-bottom: 10px; font-size: 1.05rem; }
-
-    .value-box { background: var(--white); border: 2px solid var(--primary-light); border-radius: 12px; padding: 28px; margin: 36px 0; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
-    .value-title { font-size: 1.4rem; font-weight: 800; color: var(--primary); margin-bottom: 16px; text-align: center; }
-    .feature-item { display: flex; align-items: flex-start; margin-bottom: 14px; }
-    .feature-icon { color: var(--primary-light); font-weight: bold; margin-right: 12px; font-size: 1.2rem; }
-
-    /* Trust Badges Bar */
-    .trust-badges { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 16px; font-size: 0.85rem; color: var(--text-muted); font-weight: 600; }
-    .trust-badges span { display: inline-flex; align-items: center; gap: 6px; }
-
-    .cta-container { text-align: center; margin: 40px 0; }
-    .btn-primary { display: inline-block; background: #2e7d32; color: white; font-size: 1.25rem; font-weight: 700; text-decoration: none; padding: 18px 36px; border-radius: 8px; box-shadow: 0 4px 14px rgba(46, 125, 50, 0.35); transition: background 0.2s ease; width: 100%; max-width: 480px; }
-    .btn-primary:hover { background: #1b5e20; }
-    .price-tag { margin-top: 10px; font-size: 0.9rem; color: var(--text-muted); }
-    .delivery-guarantee { margin-top: 8px; font-size: 0.8rem; color: #6b7280; font-style: italic; }
-
-    footer { background: #111827; color: #9ca3af; font-size: 0.775rem; padding: 40px 20px; text-align: center; margin-top: 60px; }
-    footer a { color: #d1d5db; text-decoration: underline; }
-    .disclaimer-box { max-width: 800px; margin: 0 auto; text-align: justify; line-height: 1.5; color: #6b7280; margin-top: 20px; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Natural GLP-1 Reset | Ultimate Elite Catalog Bundle</title>
+    <style>
+        :root {
+            --primary: #1B4D3E;
+            --primary-dark: #113328;
+            --accent: #D8F3DC;
+            --text-dark: #2C3E50;
+            --text-light: #555555;
+            --bg-light: #F4F9F5;
+            --white: #FFFFFF;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+        body {
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+            color: var(--white);
+            text-align: center;
+            padding: 60px 20px;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            font-weight: 800;
+        }
+        header p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 30px auto;
+            opacity: 0.9;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #E67E22;
+            color: var(--white);
+            padding: 16px 36px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+        .cta-button:hover {
+            background-color: #D35400;
+            transform: translateY(-2px);
+        }
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .section-title {
+            text-align: center;
+            color: var(--primary);
+            font-size: 2rem;
+            margin-bottom: 40px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-bottom: 50px;
+        }
+        .card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border-top: 4px solid var(--primary);
+        }
+        .card h3 {
+            color: var(--primary);
+            margin-bottom: 12px;
+            font-size: 1.3rem;
+        }
+        .card p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+        .banner {
+            background-color: var(--white);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .banner h2 {
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+        footer {
+            background-color: var(--primary-dark);
+            color: var(--white);
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+    </style>
 </head>
 <body>
 
-  <div class="top-bar">SPECIAL METABOLIC HEALTH REPORT</div>
+    <header>
+        <h1>The Natural GLP-1 Reset</h1>
+        <p>Complete Elite Catalog & Protocol Suite (4-in-1 Digital Library + Tracker)</p>
+        <a href="https://ejgsa0-zc.myshopify.com/products/the-natural-glp-1-reset-ultimate-elite-catalog-bundle-4-in-1-suite?utm_source=copyToPasteBoard&utm_medium=product-links&utm_content=web" class="cta-button">Get Instant Access Now — $5.99+</a>
+    </header>
 
-  <header>
-    <div class="logo">The Natural GLP-1 Reset</div>
-  </header>
-
-  <div class="container">
-    
-    <h1 class="hero-headline">Beyond Synthetic Injections: How Whole Foods Trigger Your Body’s Natural Fullness Hormone</h1>
-    <p class="subheadline">Discover how targeted gut-signaling biology stimulates natural GLP-1 production—without chemical side effects or lean tissue depletion.</p>
-
-    <!-- Visual Product Mockup -->
-    <div class="product-mockup-container">
-      <Image src="image_generation_content/17200993558113666920" alt="The Natural GLP-1 Reset E-Book and Printable Action Kit Bundle" />
-    </div>
-
-    <!-- News Headlines & Health Coverage Section -->
-    <div class="news-card">
-      <span class="news-tag">Health Headlines & Clinical Reports</span>
-      <div class="news-title">What Major News Outlets Are Reporting About Synthetic GLP-1 Side Effects</div>
-      
-      <div class="news-item">
-        <span class="news-source">Media & Cosmetic Surgery Trends Report</span>
-        <span class="news-item-headline">"‘Facial Volume Loss & Rapid Skin Sagging’ Driving Surge in Plastic Surgery"</span>
-        <p class="news-desc">Reports indicate that rapid fat depletion from synthetic appetite suppression often strips vital structural facial fat pads, leading to hollowed features and premature skin laxity.</p>
-      </div>
-
-      <div class="news-item">
-        <span class="news-source">Mayo Clinic Press & Musculoskeletal Research</span>
-        <span class="news-item-headline">"25% to 40% of Total Mass Lost on Synthetic GLP-1s May Be Lean Body Mass"</span>
-        <p class="news-desc">Clinical evaluations warn that rapid weight loss driven by synthetic suppression can accelerate skeletal muscle erosion and compromise long-term bone mineral density.</p>
-      </div>
-
-      <div class="news-item">
-        <span class="news-source">Global Metabolic Health & Sarcopenia Review</span>
-        <span class="news-item-headline">"Unintended Connective Tissue & Pelvic Floor Dysfunction From Severe Caloric Deficits"</span>
-        <p class="news-desc">Health researchers highlight that severe, unmonitored caloric restriction and rapid connective tissue loss can contribute to pelvic floor laxity and structural soft-tissue weakness.</p>
-      </div>
-    </div>
-
-    <div class="content-body">
-      <h2>Understanding Your Body's Built-In Fullness Switch</h2>
-      <p>When you consume whole foods rich in specific fermentable fibers and healthy fatty acids, your intestinal L-cells naturally release <strong>Glucagon-Like Peptide-1 (GLP-1)</strong>. This natural hormone signals your brain that you are satisfied, slows gastric emptying naturally, and stabilizes post-meal energy.</p>
-
-      <h2>A Natural, Whole-Food Approach to Fullness</h2>
-      <p><strong>The Natural GLP-1 Reset</strong> is a comprehensive, 17-chapter digital master guide designed to optimize your body's natural satiety mechanisms through strategic nutrition:</p>
-
-      <ul>
-        <li><strong>Targeted Fiber & Nutrient Protocols:</strong> How specific dietary hydrogels trigger intestinal L-cell exocytosis naturally.</li>
-        <li><strong>Lean Muscle & Bone Defense Strategy:</strong> Incorporating nutrient-dense whole proteins—including grass-fed beef, pork, bison, and goat—to protect lean tissue and bone density during weight management.</li>
-        <li><strong>Microbiome Support:</strong> Nourishing key gut bacteria like <em>Akkermansia muciniphila</em> to support long-term metabolic health.</li>
-      </ul>
-
-      <div class="value-box">
-        <div class="value-title">What You'll Receive in Today's Digital Kit</div>
+    <div class="container">
+        <h2 class="section-title">What's Included in Your Elite Bundle</h2>
         
-        <div class="feature-item">
-          <span class="feature-icon">✓</span>
-          <div><strong>Core E-Book (17-Chapter Master Guide):</strong> The complete, step-by-step nutrition, gut-signaling, and metabolic protocol.</div>
+        <div class="grid">
+            <div class="card">
+                <h3>1. The Complete Master Guide</h3>
+                <p>The core science-backed protocol explaining natural GLP-1 activation, whole-meat nutrition, and blood sugar stability without restrictive dieting.</p>
+            </div>
+            <div class="card">
+                <h3>2. The Circadian Metabolic Reset</h3>
+                <p>Master your body clock, optimize morning sunlight, improve sleep architecture, and balance your leptin and ghrelin hunger hormones.</p>
+            </div>
+            <div class="card">
+                <h3>3. The Mitochondrial Kitchen</h3>
+                <p>Heal your cellular power plants, eliminate industrial seed oils, and enjoy delicious ancestral whole-food recipes like mineral bone broth.</p>
+            </div>
+            <div class="card">
+                <h3>4. The Metabolic Flex Guide</h3>
+                <p>Activate skeletal muscle as a metabolic engine with our complete 4-week progressive at-home strength and movement blueprint.</p>
+            </div>
         </div>
 
-        <div class="feature-item">
-          <span class="feature-icon">✓</span>
-          <div><strong>Free Gift 1: The 30-Day Whole-Food Satiety Tracker:</strong> Daily habit tracking sheets to monitor your natural fullness cues.</div>
+        <div class="banner">
+            <h2>Includes Bonus 30-Day Satiety & Habit Tracker</h2>
+            <p>Stay accountable every single day with our printable daily tracking grid designed to lock in your protein intake, hydration, and appetite control.</p>
+            <br>
+            <a href="https://ejgsa0-zc.myshopify.com/products/the-natural-glp-1-reset-ultimate-elite-catalog-bundle-4-in-1-suite?utm_source=copyToPasteBoard&utm_medium=product-links&utm_content=web" class="cta-button">Download the Complete Bundle Today</a>
         </div>
-
-        <div class="feature-item">
-          <span class="feature-icon">✓</span>
-          <div><strong>Free Gift 2: The Gut-Health Grocery & Macro Swap Guide:</strong> Quick-reference sheets for targeted proteins, fibers, and smart kitchen swaps.</div>
-        </div>
-
-        <div class="feature-item">
-          <span class="feature-icon">✓</span>
-          <div><strong>Instant Digital Access:</strong> Secure, immediate PDF download on any smartphone, tablet, or computer.</div>
-        </div>
-      </div>
-
-      <div class="cta-container">
-        <a href="https://ejgsa0-zc.myshopify.com/products/the-natural-glp-1-reset-complete-30-day-master-guide-action-kit" target="_blank" rel="noopener noreferrer" class="btn-primary">Download The Complete Guide Now ($5.99)</a>
-        <div class="price-tag">One-Time Payment • Instant PDF Delivery • 100% Secure Checkout</div>
-        <div class="delivery-guarantee">"Delivered instantly to your email and browser upon checkout."</div>
-        
-        <div class="trust-badges">
-          <span>🔒 100% Secure Checkout</span>
-          <span>⚡ Instant PDF Delivery</span>
-          <span>🛡️ Verified Whole-Food Protocols</span>
-        </div>
-      </div>
-
     </div>
 
-  </div>
-
-  <footer>
-    <p>&copy; 2026 The Natural GLP-1 Reset. All Rights Reserved.</p>
-    <p style="margin-top: 8px;">
-      <a href="privacy.html">Privacy Policy</a> | 
-      <a href="terms.html">Terms of Service</a> | 
-      <a href="disclaimer.html">Disclaimer</a>
-    </p>
-
-    <div class="disclaimer-box">
-      <strong>Medical Disclaimer:</strong> The content provided in this guide and landing page is for informational and educational purposes only and is not intended as medical advice, diagnosis, or treatment. Always seek the advice of a qualified healthcare provider regarding any medical condition or dietary changes. This product is a digital educational publication focused on general nutrition and metabolic wellness.
-    </div>
-  </footer>
+    <footer>
+        <p>&copy; 2026 The Natural GLP-1 Reset. All Rights Reserved. Instant Digital Download (.ZIP format).</p>
+    </footer>
 
 </body>
 </html>
+```[cite: 56]

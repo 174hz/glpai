@@ -6,201 +6,220 @@
     <title>The Natural GLP-1 Reset: Ultimate Elite Catalog Bundle (4-in-1 Suite)</title>
     <style>
         :root {
-            --primary-color: #1B4D3E; /* Dark Forest Green */
-            --primary-dark: #123328;
-            --accent-gold: #D4AF37;
-            --bg-light: #F9FBF9;
-            --text-dark: #2C3E35;
-            --white: #FFFFFF;
+            --primary: #1B4D3E;          /* Dark Forest Green */
+            --primary-dark: #123328;     /* Deep Hover State */
+            --accent: #D4AF37;           /* Elegant Gold */
+            --bg-body: #F8FAF9;          /* Clean Off-White Shopify Background */
+            --bg-card: #FFFFFF;          /* Pure White Card Background */
+            --text-main: #1C2D26;        /* Deep Charcoal Green for High Legibility */
+            --text-muted: #5A6E65;       /* Soft Gray-Green for Subtitles */
+            --border-color: #E3EDE9;     /* Subtle Clean Divider Border */
+            --radius: 10px;              /* Modern Soft Corners */
         }
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            color: var(--text-dark);
-            background-color: var(--bg-light);
+            color: var(--text-main);
+            background-color: var(--bg-body);
             margin: 0;
             padding: 0;
-            line-height: 1.6;
+            line-height: 1.7;
             text-align: center;
+            -webkit-font-smoothing: antialiased;
         }
 
+        /* Clean Shopify-Style Header */
         header {
-            background-color: var(--primary-color);
-            color: var(--white);
-            padding: 3.5rem 1rem;
-            border-bottom: 4px solid var(--accent-gold);
+            background-color: var(--bg-card);
+            padding: 4rem 1.5rem 3rem 1.5rem;
+            border-bottom: 1px solid var(--border-color);
         }
 
-        header .editorial-tag {
+        .editorial-tag {
             display: inline-block;
-            background-color: var(--accent-gold);
-            color: var(--primary-dark);
+            background-color: #F0F4F2;
+            color: var(--primary);
             text-transform: uppercase;
-            font-size: 0.8rem;
-            font-weight: 800;
-            letter-spacing: 1.5px;
-            padding: 4px 12px;
-            border-radius: 4px;
-            margin-bottom: 1rem;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            padding: 6px 14px;
+            border-radius: 20px;
+            margin-bottom: 1.25rem;
+            border: 1px solid var(--border-color);
         }
 
         header h1 {
-            font-size: 2.3rem;
-            max-width: 850px;
+            font-size: 2.25rem;
+            font-weight: 700;
+            max-width: 800px;
             margin: 0 auto 1rem auto;
-            color: var(--white);
-            line-height: 1.3;
+            color: var(--primary);
+            line-height: 1.25;
         }
 
         header p {
-            font-size: 1.15rem;
-            color: #E2ECE9;
-            max-width: 700px;
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            max-width: 650px;
             margin: 0 auto;
         }
 
+        /* Main Container Layout */
         .container {
-            max-width: 850px;
+            max-width: 800px;
             margin: 0 auto;
-            padding: 2.5rem 1rem;
+            padding: 3rem 1.5rem;
         }
 
+        /* Balanced Product Hero Card */
         .product-hero {
-            background: var(--white);
-            border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(27, 77, 62, 0.08);
-            padding: 2.5rem;
-            margin-top: -2.5rem;
-            border: 1px solid #E2ECE9;
+            background: var(--bg-card);
+            border-radius: var(--radius);
+            box-shadow: 0 10px 30px rgba(27, 77, 62, 0.04);
+            padding: 3rem 2.5rem;
+            border: 1px solid var(--border-color);
             text-align: center;
+            margin-bottom: 3.5rem;
+        }
+
+        .product-hero h2 {
+            color: var(--primary);
+            font-size: 1.75rem;
+            margin-top: 0;
+            margin-bottom: 0.75rem;
         }
 
         .pricing-box {
-            margin: 1.5rem 0;
+            margin: 1.75rem 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
         }
 
         .original-price {
-            font-size: 1.2rem;
-            color: #777;
-            margin-right: 1rem;
+            font-size: 1.1rem;
+            color: #888;
+            text-decoration: line-through;
         }
 
         .promo-price {
-            font-size: 2.1rem;
-            font-weight: bold;
-            color: var(--primary-color);
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary);
         }
 
         .save-badge {
-            display: inline-block;
-            background-color: var(--accent-gold);
-            color: var(--primary-dark);
-            font-weight: bold;
-            padding: 4px 12px;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            margin-left: 10px;
-            vertical-align: middle;
+            background-color: var(--accent);
+            color: #FFFFFF;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            letter-spacing: 0.5px;
         }
 
         .discount-callout {
-            border: 2px dashed var(--primary-color);
+            border: 1px dashed var(--primary);
             background-color: #F4F8F6;
-            padding: 20px;
+            padding: 1.25rem 1.5rem;
             border-radius: 8px;
-            margin: 20px auto;
-            max-width: 750px;
-            text-align: center;
+            margin: 1.75rem auto;
+            text-align: left;
         }
 
         .code-box {
-            background: var(--primary-color);
-            color: var(--white);
-            padding: 6px 12px;
+            background: var(--primary);
+            color: #FFFFFF;
+            padding: 4px 10px;
             border-radius: 4px;
             font-family: monospace;
-            font-size: 1.1rem;
+            font-size: 1rem;
             letter-spacing: 1px;
             display: inline-block;
-            margin: 4px;
+            margin: 0 3px;
         }
 
+        /* Primary Action Button */
         .btn-primary {
-            background-color: var(--primary-color);
-            color: var(--white);
+            background-color: var(--primary);
+            color: #FFFFFF;
             padding: 16px 36px;
             text-decoration: none;
-            font-size: 1.2rem;
-            font-weight: bold;
-            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: var(--radius);
             display: inline-block;
-            transition: background-color 0.2s ease, transform 0.1s ease;
-            box-shadow: 0 4px 12px rgba(27, 77, 62, 0.2);
-            margin-top: 1.5rem;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 12px rgba(27, 77, 62, 0.15);
+            margin-top: 1.25rem;
+            width: 100%;
+            max-width: 400px;
+            box-sizing: border-box;
         }
 
         .btn-primary:hover {
             background-color: var(--primary-dark);
-            transform: translateY(-2px);
+            transform: translateY(-1px);
+            box-shadow: 0 6px 16px rgba(27, 77, 62, 0.2);
         }
 
-        /* Listicle Breakdown Styles */
+        /* Listicle Section Styles */
         .listicle-section {
-            margin-top: 3.5rem;
             text-align: center;
         }
 
         .listicle-section h2 {
-            color: var(--primary-color);
-            font-size: 2rem;
+            color: var(--primary);
+            font-size: 1.85rem;
             margin-bottom: 2.5rem;
         }
 
         .reason-card {
-            background: var(--white);
+            background: var(--bg-card);
             padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
-            margin-bottom: 1.5rem;
-            border-left: 5px solid var(--accent-gold);
+            border-radius: var(--radius);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+            margin-bottom: 1.25rem;
+            border: 1px solid var(--border-color);
+            border-left: 4px solid var(--accent);
             text-align: left;
-            position: relative;
         }
 
         .reason-number {
-            font-size: 0.85rem;
+            font-size: 0.75rem;
             text-transform: uppercase;
-            letter-spacing: 1px;
-            font-weight: bold;
-            color: var(--accent-gold);
-            background: var(--primary-dark);
-            padding: 3px 10px;
-            border-radius: 4px;
-            display: inline-block;
-            margin-bottom: 0.5rem;
+            letter-spacing: 1.5px;
+            font-weight: 700;
+            color: var(--accent);
+            margin-bottom: 0.4rem;
+            display: block;
         }
 
         .reason-card h3 {
-            color: var(--primary-color);
-            margin: 0.3rem 0 0.8rem 0;
-            font-size: 1.3rem;
+            color: var(--primary);
+            margin: 0 0 0.6rem 0;
+            font-size: 1.2rem;
+            font-weight: 600;
         }
 
         .reason-card p {
             margin: 0;
-            color: #444;
-            font-size: 1.05rem;
+            color: var(--text-muted);
+            font-size: 1rem;
         }
 
-        /* Footer & Modals */
+        /* Shopify-Clean Footer */
         footer {
             text-align: center;
             padding: 3rem 1rem;
-            color: #666;
-            font-size: 0.9rem;
-            border-top: 1px solid #E2ECE9;
-            margin-top: 4rem;
-            background-color: #F4F8F6;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--border-color);
+            margin-top: 5rem;
+            background-color: var(--bg-card);
         }
 
         .footer-links {
@@ -208,74 +227,82 @@
         }
 
         .footer-links a {
-            color: var(--primary-color);
+            color: var(--primary);
             text-decoration: none;
-            margin: 0 12px;
-            font-weight: 600;
+            margin: 0 10px;
+            font-weight: 500;
         }
 
         .footer-links a:hover {
             text-decoration: underline;
         }
 
+        /* Modal Layout */
         .modal {
             display: none;
             position: fixed;
             top: 0; left: 0; width: 100%; height: 100%;
-            background: rgba(0,0,0,0.6);
+            background: rgba(28, 45, 38, 0.5);
+            backdrop-filter: blur(4px);
             z-index: 1000;
             justify-content: center;
             align-items: center;
         }
 
         .modal-content {
-            background: var(--white);
-            padding: 2rem;
-            border-radius: 8px;
-            max-width: 600px;
+            background: var(--bg-card);
+            padding: 2.5rem;
+            border-radius: var(--radius);
+            max-width: 550px;
             max-height: 80vh;
             overflow-y: auto;
             position: relative;
             text-align: left;
             margin: 1rem;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
         }
 
         .close-modal {
             position: absolute;
-            top: 15px;
+            top: 20px;
             right: 20px;
-            font-size: 1.5rem;
+            font-size: 1.25rem;
             cursor: pointer;
-            color: #999;
+            color: var(--text-muted);
+        }
+        
+        .close-modal:hover {
+            color: var(--text-main);
         }
     </style>
 </head>
 <body>
 
     <header>
-        <span class="editorial-tag">Special Wellness Report &bull; Verified Science</span>
+        <span class="editorial-tag">Trending Health Report &bull; Mainstream Shift</span>
         <h1>6 Reasons Why Americans Are Switching to This Natural GLP-1 Solution</h1>
-        <p>Before opting for extreme measures or expensive interventions, see how everyday health-seekers are naturally activating satiety signals through targeted nutritional science.</p>
+        <p>As headlines move away from costly, synthetic interventions, everyday wellness seekers are turning to targeted nutritional science to naturally activate their body’s satiety pathways.</p>
     </header>
 
     <div class="container">
         <!-- Hero Box with Pricing & Promo Code -->
         <section class="product-hero">
-            <h2>The Ultimate 4-in-1 Elite Catalog Suite</h2>
-            <p class="subtitle" style="max-width: 650px; margin: 0 auto 1.5rem auto; color: #555;">Includes the complete Master Guide, Mucosal Barrier Protocol, 30 Incretin-Activating Recipes, and the 30-Day Action Kit.</p>
+            <h2>The Ultimate 4-in-1 Elite Catalog Bundle</h2>
+            <p style="color: var(--text-muted); max-width: 550px; margin: 0 auto 1.5rem auto; font-size: 1rem;">Includes the complete Master Guide, Mucosal Barrier Protocol, 30 Incretin-Activating Recipes, and the 30-Day Action Kit.</p>
             
             <div class="pricing-box">
-                <span class="original-price">Regular Price: <del>$17.00 USD</del></span>
-                <span class="promo-price">Final Price: $6.99 USD</span>
-                <span class="save-badge">Save $10.01 USD</span>
+                <span class="original-price">$17.00 USD</span>
+                <span class="promo-price">$6.99 USD</span>
+                <span class="save-badge">Save $10.01</span>
             </div>
 
             <div class="discount-callout">
-                <p style="margin: 0; font-size: 1.05rem; color: var(--primary-color);">
-                    <strong>⚡ LIMITED-TIME PROMOTION:</strong> Enter coupon code <span class="code-box">GLP-1RESET50</span> at checkout to instantly claim your <strong>$10.01 USD discount</strong> off the regular $17.00 USD price!
+                <p style="margin: 0; font-size: 0.95rem; color: var(--primary);">
+                    <strong>⚡ LIMITED-TIME PROMOTION:</strong> Enter coupon code <span class="code-box">GLP-1RESET50</span> at checkout to instantly claim your <strong>$10.01 discount</strong> off the regular $17.00 price!
                 </p>
-                <p style="margin-top: 10px; font-size: 0.9rem; color: #555; margin-bottom: 0;">
-                    <em>Note: You must manually enter code <strong>GLP-1RESET50</strong> on the checkout screen to unlock the $6.99 USD promotional rate.</em>
+                <p style="margin-top: 8px; font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0;">
+                    <em>Note: Manually enter code <strong>GLP-1RESET50</strong> on the checkout screen to unlock the $6.99 promotional rate.</em>
                 </p>
             </div>
 
@@ -283,47 +310,47 @@
         </section>
 
         <!-- Listicle / Skepticism-Busting Breakdown -->
-        <section class="listicle-section">
+        <main class="listicle-section">
             <h2>The Science-Backed Breakdown</h2>
             
             <div class="reason-card">
                 <span class="reason-number">Reason 01</span>
-                <h3>Targeted L-Cell Endogenous Stimulation</h3>
-                <p>Instead of relying on synthetic chemical analogs, the protocol focuses on feeding and activating your gut's natural L-cells to prompt native GLP-1 peptide release safely from within.</p>
+                <h3>The Shift Away from Synthetic Dependency</h3>
+                <p>Amid growing news coverage regarding the high financial and physiological costs of synthetic weight-loss drugs, consumers are seeking sustainable, native metabolic alternatives.</p>
             </div>
 
             <div class="reason-card">
                 <span class="reason-number">Reason 02</span>
-                <h3>Precision GPCR Gut Sensor Activation</h3>
-                <p>Learn how specific dietary components engage G-protein coupled receptors (GPR120, GPR40, GPR41, and GPR43) to regulate metabolic homeostasis and curb appetite at the root.</p>
+                <h3>Targeted Endogenous L-Cell Stimulation</h3>
+                <p>Rather than injecting artificial analogs, this protocol reactivates your gut's natural L-cells to prompt native GLP-1 peptide release securely from within your body.</p>
             </div>
 
             <div class="reason-card">
                 <span class="reason-number">Reason 03</span>
-                <h3>Mucosal Barrier Repair Protocol</h3>
-                <p>Eliminate silent micro-inflammation and fortify your intestinal lining. A healthy mucosal barrier is mandatory for optimal short-chain fatty acid (SCFA) absorption and signaling.</p>
+                <h3>Precision GPCR Gut Receptor Activation</h3>
+                <p>Discover how specific whole-food nutrients engage G-protein coupled receptors (GPR120, GPR40, GPR41, and GPR43) to regulate blood sugar and naturally suppress cravings.</p>
             </div>
 
             <div class="reason-card">
                 <span class="reason-number">Reason 04</span>
-                <h3>Incretin-Optimized Whole Food Recipes</h3>
-                <p>Featuring 30 mouthwatering recipes engineered with strategic protein anchors, resistant starches, and healthy fats designed to flatten glucose curves without feeling deprived.</p>
+                <h3>Mucosal Barrier Repair Protocol</h3>
+                <p>Eradicate silent micro-inflammation and fortify your intestinal lining to ensure optimal short-chain fatty acid (SCFA) absorption and natural satiety signaling.</p>
             </div>
 
             <div class="reason-card">
                 <span class="reason-number">Reason 05</span>
-                <h3>Zero Extreme Restriction or Costly Rx</h3>
-                <p>Designed for sustainable, long-term metabolic health. Enjoy whole, nutrient-dense foods at a fraction of the cost and with zero synthetic side effects.</p>
+                <h3>Incretin-Optimized Whole Food Recipes</h3>
+                <p>Enjoy 30 chef-designed recipes built with strategic protein anchors, resistant starches, and healthy fats that flatten glucose curves without feeling deprived.</p>
             </div>
 
             <div class="reason-card">
                 <span class="reason-number">Reason 06</span>
-                <h3>Fully Peer-Reviewed & Verified Bibliography</h3>
-                <p>No guesswork or internet fads. Every mechanism in the 20-page master guide is backed by a fully transparent, verified scientific bibliography.</p>
+                <h3>100% Peer-Reviewed & Transparent Science</h3>
+                <p>Eliminate internet guesswork. Every protocol and mechanism outlined in the 20-page master guide is supported by a fully verified academic bibliography.</p>
             </div>
 
             <a href="https://ejgsa0-zc.myshopify.com/products/the-natural-glp-1-reset-ultimate-elite-catalog-bundle-4-in-1-suite" class="btn-primary" target="_blank" style="margin-top: 2rem;">Get the Complete 4-in-1 Suite for $6.99</a>
-        </section>
+        </main>
     </div>
 
     <footer>
@@ -339,24 +366,24 @@
     <div id="privacyModal" class="modal">
         <div class="modal-content">
             <span class="close-modal" onclick="closeModal('privacyModal')">&times;</span>
-            <h3>Privacy Policy</h3>
-            <p>Your privacy is important to us. We collect minimal personal information (such as email address and order history) strictly to fulfill your digital orders and provide product updates. We do not sell, rent, or trade your personal data to third parties.</p>
+            <h3 style="color: var(--primary); margin-top:0;">Privacy Policy</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem;">Your privacy is important to us. We collect minimal personal information strictly to fulfill digital orders and provide product updates. We never sell or trade your data.</p>
         </div>
     </div>
 
     <div id="termsModal" class="modal">
         <div class="modal-content">
             <span class="close-modal" onclick="closeModal('termsModal')">&times;</span>
-            <h3>Terms of Service</h3>
-            <p>By purchasing and downloading "The Natural GLP-1 Reset: Ultimate Elite Catalog Bundle", you receive a personal, non-exclusive, non-transferable license to view and print the PDF for individual use. Redistribution, resale, or unauthorized sharing of these digital materials is strictly prohibited.</p>
+            <h3 style="color: var(--primary); margin-top:0;">Terms of Service</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem;">Purchasing grants a personal, non-exclusive license to view and download the PDF suite for individual use. Redistribution or unauthorized resale is prohibited.</p>
         </div>
     </div>
 
     <div id="disclaimerModal" class="modal">
         <div class="modal-content">
             <span class="close-modal" onclick="closeModal('disclaimerModal')">&times;</span>
-            <h3>Medical Disclaimer</h3>
-            <p>The information contained in this guide and cookbook is for educational and informational purposes only and is not intended as medical advice, diagnosis, or treatment. Always consult with a qualified physician or healthcare provider before altering your diet, starting a new nutritional regimen, or making changes to prescribed medications.</p>
+            <h3 style="color: var(--primary); margin-top:0;">Medical Disclaimer</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem;">For educational purposes only. Always consult a qualified physician before modifying your diet, nutrition protocol, or medical treatments.</p>
         </div>
     </div>
 

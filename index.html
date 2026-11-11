@@ -27,27 +27,42 @@
         header {
             background-color: var(--primary-color);
             color: var(--white);
-            padding: 3rem 1rem;
+            padding: 3.5rem 1rem;
             border-bottom: 4px solid var(--accent-gold);
         }
 
+        header .editorial-tag {
+            display: inline-block;
+            background-color: var(--accent-gold);
+            color: var(--primary-dark);
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+            padding: 4px 12px;
+            border-radius: 4px;
+            margin-bottom: 1rem;
+        }
+
         header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
+            font-size: 2.3rem;
+            max-width: 850px;
+            margin: 0 auto 1rem auto;
             color: var(--white);
+            line-height: 1.3;
         }
 
         header p {
-            font-size: 1.2rem;
+            font-size: 1.15rem;
             color: #E2ECE9;
             max-width: 700px;
             margin: 0 auto;
         }
 
         .container {
-            max-width: 900px;
+            max-width: 850px;
             margin: 0 auto;
-            padding: 2rem 1rem;
+            padding: 2.5rem 1rem;
         }
 
         .product-hero {
@@ -55,14 +70,9 @@
             border-radius: 12px;
             box-shadow: 0 10px 30px rgba(27, 77, 62, 0.08);
             padding: 2.5rem;
-            margin-top: -2rem;
+            margin-top: -2.5rem;
             border: 1px solid #E2ECE9;
             text-align: center;
-        }
-
-        .product-hero h2 {
-            color: var(--primary-color);
-            margin-top: 0;
         }
 
         .pricing-box {
@@ -76,7 +86,7 @@
         }
 
         .promo-price {
-            font-size: 2rem;
+            font-size: 2.1rem;
             font-weight: bold;
             color: var(--primary-color);
         }
@@ -118,7 +128,7 @@
         .btn-primary {
             background-color: var(--primary-color);
             color: var(--white);
-            padding: 16px 32px;
+            padding: 16px 36px;
             text-decoration: none;
             font-size: 1.2rem;
             font-weight: bold;
@@ -126,7 +136,7 @@
             display: inline-block;
             transition: background-color 0.2s ease, transform 0.1s ease;
             box-shadow: 0 4px 12px rgba(27, 77, 62, 0.2);
-            margin-top: 1rem;
+            margin-top: 1.5rem;
         }
 
         .btn-primary:hover {
@@ -134,36 +144,55 @@
             transform: translateY(-2px);
         }
 
-        .features-section {
-            margin-top: 3rem;
-        }
-
-        .features-section h2 {
-            color: var(--primary-color);
-            margin-bottom: 2rem;
-            font-size: 2rem;
-        }
-
-        .feature-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
-        }
-
-        .feature-card {
-            background: var(--white);
-            padding: 1.5rem;
-            border-radius: 8px;
-            border-top: 4px solid var(--accent-gold);
-            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+        /* Listicle Breakdown Styles */
+        .listicle-section {
+            margin-top: 3.5rem;
             text-align: center;
         }
 
-        .feature-card h3 {
+        .listicle-section h2 {
             color: var(--primary-color);
-            margin-top: 0;
+            font-size: 2rem;
+            margin-bottom: 2.5rem;
         }
 
+        .reason-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+            margin-bottom: 1.5rem;
+            border-left: 5px solid var(--accent-gold);
+            text-align: left;
+            position: relative;
+        }
+
+        .reason-number {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: bold;
+            color: var(--accent-gold);
+            background: var(--primary-dark);
+            padding: 3px 10px;
+            border-radius: 4px;
+            display: inline-block;
+            margin-bottom: 0.5rem;
+        }
+
+        .reason-card h3 {
+            color: var(--primary-color);
+            margin: 0.3rem 0 0.8rem 0;
+            font-size: 1.3rem;
+        }
+
+        .reason-card p {
+            margin: 0;
+            color: #444;
+            font-size: 1.05rem;
+        }
+
+        /* Footer & Modals */
         footer {
             text-align: center;
             padding: 3rem 1rem;
@@ -224,14 +253,16 @@
 <body>
 
     <header>
-        <h1>The Natural GLP-1 Reset</h1>
-        <p>Ultimate Elite Catalog Bundle (4-in-1 Suite)</p>
+        <span class="editorial-tag">Special Wellness Report &bull; Verified Science</span>
+        <h1>6 Reasons Why Americans Are Switching to This Natural GLP-1 Solution</h1>
+        <p>Before opting for extreme measures or expensive interventions, see how everyday health-seekers are naturally activating satiety signals through targeted nutritional science.</p>
     </header>
 
     <div class="container">
+        <!-- Hero Box with Pricing & Promo Code -->
         <section class="product-hero">
-            <h2>Activate Your Body's Natural Satiety Signals</h2>
-            <p class="subtitle" style="max-width: 700px; margin: 0 auto 1.5rem auto;">Unlock sustainable metabolic balance, suppress cravings naturally, and master your gut health with our complete science-backed 4-in-1 suite.</p>
+            <h2>The Ultimate 4-in-1 Elite Catalog Suite</h2>
+            <p class="subtitle" style="max-width: 650px; margin: 0 auto 1.5rem auto; color: #555;">Includes the complete Master Guide, Mucosal Barrier Protocol, 30 Incretin-Activating Recipes, and the 30-Day Action Kit.</p>
             
             <div class="pricing-box">
                 <span class="original-price">Regular Price: <del>$17.00 USD</del></span>
@@ -248,30 +279,50 @@
                 </p>
             </div>
 
-            <!-- Links to Shopify bundle page and opens in a new tab -->
             <a href="https://ejgsa0-zc.myshopify.com/products/the-natural-glp-1-reset-ultimate-elite-catalog-bundle-4-in-1-suite" class="btn-primary" target="_blank">Claim Your 4-in-1 Suite Now</a>
         </section>
 
-        <section class="features-section">
-            <h2>What’s Included in the 4-in-1 Elite Suite</h2>
-            <div class="feature-grid">
-                <div class="feature-card">
-                    <h3>1. The 20-Page Master Guide</h3>
-                    <p>Deep-dive layman's science breaking down L-cells, GPCR gut sensors (GPR120/40/41/43), and natural incretin activation without medical jargon.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>2. Mucosal Barrier Protocol</h3>
-                    <p>Step-by-step guidance on repairing gut lining, eliminating silent micro-inflammation, and feeding your microbiome for optimal SCFA production.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>3. 30 Incretin-Activating Recipes</h3>
-                    <p>Delicious whole-food recipes engineered with strategic protein anchors, resistant starches, and healthy fats to flatten blood sugar curves.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>4. 30-Day Action Kit & Bibliography</h3>
-                    <p>A week-by-week implementation calendar paired with a fully verified peer-reviewed scientific bibliography.</p>
-                </div>
+        <!-- Listicle / Skepticism-Busting Breakdown -->
+        <section class="listicle-section">
+            <h2>The Science-Backed Breakdown</h2>
+            
+            <div class="reason-card">
+                <span class="reason-number">Reason 01</span>
+                <h3>Targeted L-Cell Endogenous Stimulation</h3>
+                <p>Instead of relying on synthetic chemical analogs, the protocol focuses on feeding and activating your gut's natural L-cells to prompt native GLP-1 peptide release safely from within.</p>
             </div>
+
+            <div class="reason-card">
+                <span class="reason-number">Reason 02</span>
+                <h3>Precision GPCR Gut Sensor Activation</h3>
+                <p>Learn how specific dietary components engage G-protein coupled receptors (GPR120, GPR40, GPR41, and GPR43) to regulate metabolic homeostasis and curb appetite at the root.</p>
+            </div>
+
+            <div class="reason-card">
+                <span class="reason-number">Reason 03</span>
+                <h3>Mucosal Barrier Repair Protocol</h3>
+                <p>Eliminate silent micro-inflammation and fortify your intestinal lining. A healthy mucosal barrier is mandatory for optimal short-chain fatty acid (SCFA) absorption and signaling.</p>
+            </div>
+
+            <div class="reason-card">
+                <span class="reason-number">Reason 04</span>
+                <h3>Incretin-Optimized Whole Food Recipes</h3>
+                <p>Featuring 30 mouthwatering recipes engineered with strategic protein anchors, resistant starches, and healthy fats designed to flatten glucose curves without feeling deprived.</p>
+            </div>
+
+            <div class="reason-card">
+                <span class="reason-number">Reason 05</span>
+                <h3>Zero Extreme Restriction or Costly Rx</h3>
+                <p>Designed for sustainable, long-term metabolic health. Enjoy whole, nutrient-dense foods at a fraction of the cost and with zero synthetic side effects.</p>
+            </div>
+
+            <div class="reason-card">
+                <span class="reason-number">Reason 06</span>
+                <h3>Fully Peer-Reviewed & Verified Bibliography</h3>
+                <p>No guesswork or internet fads. Every mechanism in the 20-page master guide is backed by a fully transparent, verified scientific bibliography.</p>
+            </div>
+
+            <a href="https://ejgsa0-zc.myshopify.com/products/the-natural-glp-1-reset-ultimate-elite-catalog-bundle-4-in-1-suite" class="btn-primary" target="_blank" style="margin-top: 2rem;">Get the Complete 4-in-1 Suite for $6.99</a>
         </section>
     </div>
 

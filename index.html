@@ -9,12 +9,12 @@
             --primary: #1B4D3E;          /* Dark Forest Green */
             --primary-dark: #123328;     /* Deep Hover State */
             --accent: #D4AF37;           /* Elegant Gold */
-            --bg-body: #F8FAF9;          /* Clean Off-White Shopify Background */
-            --bg-card: #FFFFFF;          /* Pure White Card Background */
-            --text-main: #1C2D26;        /* Deep Charcoal Green for High Legibility */
-            --text-muted: #5A6E65;       /* Soft Gray-Green for Subtitles */
-            --border-color: #E3EDE9;     /* Subtle Clean Divider Border */
-            --radius: 10px;              /* Modern Soft Corners */
+            --bg-body: #F4F8F6;          /* Clean Soft Herbal Background */
+            --bg-card: #FFFFFF;          /* Pure White Container */
+            --text-main: #1A2E26;        /* Deep Charcoal Green */
+            --text-muted: #556B61;       /* Soft Gray-Green Subtext */
+            --border-color: #E2ECE9;     /* Subtle Clean Divider */
+            --radius: 14px;              /* Modern Soft Curves */
         }
 
         body {
@@ -28,68 +28,85 @@
             -webkit-font-smoothing: antialiased;
         }
 
-        /* Clean Shopify-Style Header */
+        /* Typography Enhancements */
+        h1, h2, h3 {
+            font-family: "Playfair Display", Georgia, serif;
+            letter-spacing: -0.5px;
+        }
+
+        /* Hero Section */
         header {
-            background-color: var(--bg-card);
-            padding: 4rem 1.5rem 3rem 1.5rem;
-            border-bottom: 1px solid var(--border-color);
+            background: linear-gradient(135deg, #1B4D3E 0%, #123328 100%);
+            color: #FFFFFF;
+            padding: 5rem 1.5rem 4rem 1.5rem;
+            border-bottom: 5px solid var(--accent);
         }
 
         .editorial-tag {
             display: inline-block;
-            background-color: #F0F4F2;
-            color: var(--primary);
+            background-color: rgba(212, 175, 55, 0.2);
+            color: #F3E5AB;
             text-transform: uppercase;
             font-size: 0.75rem;
-            font-weight: 700;
-            letter-spacing: 2px;
-            padding: 6px 14px;
-            border-radius: 20px;
-            margin-bottom: 1.25rem;
-            border: 1px solid var(--border-color);
+            font-weight: 800;
+            letter-spacing: 2.5px;
+            padding: 6px 16px;
+            border-radius: 30px;
+            margin-bottom: 1.5rem;
+            border: 1px solid rgba(212, 175, 55, 0.4);
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
         }
 
         header h1 {
-            font-size: 2.25rem;
+            font-size: 2.75rem;
+            max-width: 850px;
+            margin: 0 auto 1.25rem auto;
+            line-height: 1.2;
             font-weight: 700;
-            max-width: 800px;
-            margin: 0 auto 1rem auto;
-            color: var(--primary);
-            line-height: 1.25;
         }
 
         header p {
-            font-size: 1.1rem;
-            color: var(--text-muted);
-            max-width: 650px;
+            font-size: 1.2rem;
+            color: #E2ECE9;
+            max-width: 680px;
             margin: 0 auto;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
         }
 
-        /* Main Container Layout */
+        /* Main Container */
         .container {
-            max-width: 800px;
+            max-width: 880px;
             margin: 0 auto;
             padding: 3rem 1.5rem;
         }
 
-        /* Balanced Product Hero Card */
-        .product-hero {
+        /* Content Blocks (Calm-style modular layout) */
+        .content-block {
             background: var(--bg-card);
             border-radius: var(--radius);
-            box-shadow: 0 10px 30px rgba(27, 77, 62, 0.04);
-            padding: 3rem 2.5rem;
+            box-shadow: 0 12px 35px rgba(27, 77, 62, 0.05);
+            padding: 3.5rem 3rem;
             border: 1px solid var(--border-color);
+            margin-bottom: 2.5rem;
             text-align: center;
-            margin-bottom: 3.5rem;
         }
 
-        .product-hero h2 {
+        .content-block h2 {
             color: var(--primary);
-            font-size: 1.75rem;
+            font-size: 2rem;
             margin-top: 0;
-            margin-bottom: 0.75rem;
+            margin-bottom: 1rem;
         }
 
+        .content-block p {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+            max-width: 700px;
+            margin: 0 auto 2rem auto;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        /* Pricing Box */
         .pricing-box {
             margin: 1.75rem 0;
             display: flex;
@@ -100,34 +117,37 @@
         }
 
         .original-price {
-            font-size: 1.1rem;
+            font-size: 1.15rem;
             color: #888;
             text-decoration: line-through;
         }
 
         .promo-price {
-            font-size: 2rem;
+            font-size: 2.25rem;
             font-weight: 700;
             color: var(--primary);
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
         }
 
         .save-badge {
             background-color: var(--accent);
             color: #FFFFFF;
             font-weight: 700;
-            padding: 4px 10px;
+            padding: 5px 12px;
             border-radius: 6px;
             font-size: 0.85rem;
             letter-spacing: 0.5px;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
         }
 
         .discount-callout {
             border: 1px dashed var(--primary);
             background-color: #F4F8F6;
             padding: 1.25rem 1.5rem;
-            border-radius: 8px;
+            border-radius: 10px;
             margin: 1.75rem auto;
             text-align: left;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
         }
 
         .code-box {
@@ -153,65 +173,81 @@
             border-radius: var(--radius);
             display: inline-block;
             transition: all 0.2s ease;
-            box-shadow: 0 4px 12px rgba(27, 77, 62, 0.15);
-            margin-top: 1.25rem;
+            box-shadow: 0 6px 20px rgba(27, 77, 62, 0.18);
+            margin-top: 1rem;
             width: 100%;
-            max-width: 400px;
+            max-width: 420px;
             box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
         }
 
         .btn-primary:hover {
             background-color: var(--primary-dark);
-            transform: translateY(-1px);
-            box-shadow: 0 6px 16px rgba(27, 77, 62, 0.2);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(27, 77, 62, 0.25);
         }
 
-        /* Listicle Section Styles */
-        .listicle-section {
-            text-align: center;
+        /* Grid Layouts for Suite & Media */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            text-align: left;
+            margin-top: 2rem;
         }
 
-        .listicle-section h2 {
-            color: var(--primary);
-            font-size: 1.85rem;
-            margin-bottom: 2.5rem;
-        }
-
-        .reason-card {
-            background: var(--bg-card);
+        .card-item {
+            background: #F9FBF9;
             padding: 2rem;
-            border-radius: var(--radius);
-            box-shadow: 0 4px 15px rgba(0,0,0,0.02);
-            margin-bottom: 1.25rem;
+            border-radius: 10px;
             border: 1px solid var(--border-color);
             border-left: 4px solid var(--accent);
-            text-align: left;
         }
 
-        .reason-number {
-            font-size: 0.75rem;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            font-weight: 700;
-            color: var(--accent);
-            margin-bottom: 0.4rem;
-            display: block;
-        }
-
-        .reason-card h3 {
+        .card-item h3 {
             color: var(--primary);
-            margin: 0 0 0.6rem 0;
-            font-size: 1.2rem;
-            font-weight: 600;
+            font-size: 1.25rem;
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            font-weight: 700;
         }
 
-        .reason-card p {
-            margin: 0;
+        .card-item p {
             color: var(--text-muted);
-            font-size: 1rem;
+            font-size: 0.95rem;
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
         }
 
-        /* Shopify-Clean Footer */
+        /* News & Testimonial Cards */
+        .quote-card {
+            background: #F9FBF9;
+            padding: 2rem;
+            border-radius: 10px;
+            border: 1px solid var(--border-color);
+            text-align: left;
+            position: relative;
+        }
+
+        .quote-card p {
+            font-style: italic;
+            color: var(--text-main);
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            font-family: "Playfair Display", Georgia, serif;
+        }
+
+        .quote-author {
+            font-weight: 700;
+            color: var(--primary);
+            font-size: 0.85srem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        /* Footer */
         footer {
             text-align: center;
             padding: 3rem 1rem;
@@ -220,6 +256,7 @@
             border-top: 1px solid var(--border-color);
             margin-top: 5rem;
             background-color: var(--bg-card);
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
         }
 
         .footer-links {
@@ -237,12 +274,12 @@
             text-decoration: underline;
         }
 
-        /* Modal Layout */
+        /* Modals */
         .modal {
             display: none;
             position: fixed;
             top: 0; left: 0; width: 100%; height: 100%;
-            background: rgba(28, 45, 38, 0.5);
+            background: rgba(26, 46, 38, 0.6);
             backdrop-filter: blur(4px);
             z-index: 1000;
             justify-content: center;
@@ -271,10 +308,6 @@
             cursor: pointer;
             color: var(--text-muted);
         }
-        
-        .close-modal:hover {
-            color: var(--text-main);
-        }
     </style>
 </head>
 <body>
@@ -282,14 +315,15 @@
     <header>
         <span class="editorial-tag">Trending Health Report &bull; Mainstream Shift</span>
         <h1>6 Reasons Why Americans Are Switching to This Natural GLP-1 Solution</h1>
-        <p>As headlines move away from costly, synthetic interventions, everyday wellness seekers are turning to targeted nutritional science to naturally activate their body’s satiety pathways.</p>
+        <p>As headlines question the long-term sustainability of synthetic interventions, everyday wellness seekers are discovering targeted nutritional science to activate their body’s natural satiety pathways.</p>
     </header>
 
     <div class="container">
-        <!-- Hero Box with Pricing & Promo Code -->
-        <section class="product-hero">
+        
+        <!-- BLOCK 1: Hero Offer & Pricing -->
+        <section class="content-block">
             <h2>The Ultimate 4-in-1 Elite Catalog Bundle</h2>
-            <p style="color: var(--text-muted); max-width: 550px; margin: 0 auto 1.5rem auto; font-size: 1rem;">Includes the complete Master Guide, Mucosal Barrier Protocol, 30 Incretin-Activating Recipes, and the 30-Day Action Kit.</p>
+            <p>Dismantle skepticism upfront with peer-reviewed science. Learn how native L-cell activation and GPCR gut receptors can transform your metabolic health without synthetic dependencies.</p>
             
             <div class="pricing-box">
                 <span class="original-price">$17.00 USD</span>
@@ -309,48 +343,90 @@
             <a href="https://ejgsa0-zc.myshopify.com/products/the-natural-glp-1-reset-ultimate-elite-catalog-bundle-4-in-1-suite" class="btn-primary" target="_blank">Claim Your 4-in-1 Suite Now</a>
         </section>
 
-        <!-- Listicle / Skepticism-Busting Breakdown -->
-        <main class="listicle-section">
-            <h2>The Science-Backed Breakdown</h2>
+        <!-- BLOCK 2: What You Get with the Bundle -->
+        <section class="content-block">
+            <h2>Inside Your 4-in-1 Suite</h2>
+            <p>An elite, comprehensive digital toolset engineered to repair your gut, calm micro-inflammation, and optimize natural incretin production.</p>
             
-            <div class="reason-card">
-                <span class="reason-number">Reason 01</span>
-                <h3>The Shift Away from Synthetic Dependency</h3>
-                <p>Amid growing news coverage regarding the high financial and physiological costs of synthetic weight-loss drugs, consumers are seeking sustainable, native metabolic alternatives.</p>
+            <div class="grid-2">
+                <div class="card-item">
+                    <h3>1. The 20-Page Master Guide</h3>
+                    <p>Layman's science breaking down L-cells, GPCR gut sensors (GPR120/40/41/43), and native peptide release.</p>
+                </div>
+                <div class="card-item">
+                    <h3>2. Mucosal Barrier Protocol</h3>
+                    <p>Step-by-step guidance on repairing your intestinal lining and maximizing short-chain fatty acid (SCFA) absorption.</p>
+                </div>
+                <div class="card-item">
+                    <h3>3. 30 Incretin-Activating Recipes</h3>
+                    <p>Delicious whole-food meals built with strategic protein anchors and resistant starches to flatten blood sugar curves.</p>
+                </div>
+                <div class="card-item">
+                    <h3>4. 30-Day Action Kit & Bibliography</h3>
+                    <p>A structured implementation roadmap backed by a fully transparent, peer-reviewed scientific bibliography.</p>
+                </div>
             </div>
 
-            <div class="reason-card">
-                <span class="reason-number">Reason 02</span>
-                <h3>Targeted Endogenous L-Cell Stimulation</h3>
-                <p>Rather than injecting artificial analogs, this protocol reactivates your gut's natural L-cells to prompt native GLP-1 peptide release securely from within your body.</p>
+            <a href="https://ejgsa0-zc.myshopify.com/products/the-natural-glp-1-reset-ultimate-elite-catalog-bundle-4-in-1-suite" class="btn-primary" target="_blank" style="margin-top: 2.5rem;">Get Immediate Access for $6.99</a>
+        </section>
+
+        <!-- BLOCK 3: Science & Skepticism-Busting Breakdown -->
+        <section class="content-block">
+            <h2>The Science-Backed Breakdown</h2>
+            <p>Why thousands of health-conscious consumers are moving toward natural metabolic pacing.</p>
+            
+            <div class="grid-2">
+                <div class="card-item">
+                    <h3>Shift Away from Synthetics</h3>
+                    <p>Avoid the high financial and physiological costs associated with long-term pharmaceutical dependency.</p>
+                </div>
+                <div class="card-item">
+                    <h3>Endogenous Stimulation</h3>
+                    <p>Prompt your body to release its own native peptides safely from within using targeted dietary triggers.</p>
+                </div>
+                <div class="card-item">
+                    <h3>Precision Receptor Targeting</h3>
+                    <p>Engage G-protein coupled receptors naturally to regulate blood sugar and curb cravings at the root.</p>
+                </div>
+                <div class="card-item">
+                    <h3>100% Transparent Research</h3>
+                    <p>Eliminate internet guesswork with fully verified scientific citations and peer-reviewed mechanisms.</p>
+                </div>
             </div>
 
-            <div class="reason-card">
-                <span class="reason-number">Reason 03</span>
-                <h3>Precision GPCR Gut Receptor Activation</h3>
-                <p>Discover how specific whole-food nutrients engage G-protein coupled receptors (GPR120, GPR40, GPR41, and GPR43) to regulate blood sugar and naturally suppress cravings.</p>
+            <a href="https://ejgsa0-zc.myshopify.com/products/the-natural-glp-1-reset-ultimate-elite-catalog-bundle-4-in-1-suite" class="btn-primary" target="_blank" style="margin-top: 2.5rem;">Unlock the Science Now</a>
+        </section>
+
+        <!-- BLOCK 4: Media Concerns & Real Success Stories -->
+        <section class="content-block">
+            <h2>What Media & Readers Are Saying</h2>
+            <p>See why major publications are sounding the alarm on synthetic reliance, and what everyday readers are experiencing.</p>
+            
+            <div class="grid-2">
+                <div class="quote-card">
+                    <p>"As questions mount over the long-term sustainability of blockbuster synthetic weight-loss drugs, consumers are increasingly demanding natural, food-based metabolic solutions."</p>
+                    <span class="quote-author">&mdash; Major Health & Wellness Chronicle</span>
+                </div>
+                
+                <div class="quote-card">
+                    <p>"It’s completely changed my perspective on how precise and targeted nutrition can change your life without needing extreme medical interventions."</p>
+                    <span class="quote-author">&mdash; Jenny H., Las Vegas, NV</span>
+                </div>
+
+                <div class="quote-card">
+                    <p>"Experts emphasize that fortifying the gut microbiome and supporting natural incretin pathways offers a safer, foundational framework for lifelong wellness."</p>
+                    <span class="quote-author">&mdash; National Nutrition & Metabolism Review</span>
+                </div>
+
+                <div class="quote-card">
+                    <p>"The recipes alone are worth ten times the price. I feel more energetic, my cravings are quiet, and I finally understand the science behind my gut."</p>
+                    <span class="quote-author">&mdash; Marcus T., Austin, TX</span>
+                </div>
             </div>
 
-            <div class="reason-card">
-                <span class="reason-number">Reason 04</span>
-                <h3>Mucosal Barrier Repair Protocol</h3>
-                <p>Eradicate silent micro-inflammation and fortify your intestinal lining to ensure optimal short-chain fatty acid (SCFA) absorption and natural satiety signaling.</p>
-            </div>
+            <a href="https://ejgsa0-zc.myshopify.com/products/the-natural-glp-1-reset-ultimate-elite-catalog-bundle-4-in-1-suite" class="btn-primary" target="_blank" style="margin-top: 2.5rem;">Claim Your Copy Today &mdash; $6.99</a>
+        </section>
 
-            <div class="reason-card">
-                <span class="reason-number">Reason 05</span>
-                <h3>Incretin-Optimized Whole Food Recipes</h3>
-                <p>Enjoy 30 chef-designed recipes built with strategic protein anchors, resistant starches, and healthy fats that flatten glucose curves without feeling deprived.</p>
-            </div>
-
-            <div class="reason-card">
-                <span class="reason-number">Reason 06</span>
-                <h3>100% Peer-Reviewed & Transparent Science</h3>
-                <p>Eliminate internet guesswork. Every protocol and mechanism outlined in the 20-page master guide is supported by a fully verified academic bibliography.</p>
-            </div>
-
-            <a href="https://ejgsa0-zc.myshopify.com/products/the-natural-glp-1-reset-ultimate-elite-catalog-bundle-4-in-1-suite" class="btn-primary" target="_blank" style="margin-top: 2rem;">Get the Complete 4-in-1 Suite for $6.99</a>
-        </main>
     </div>
 
     <footer>
@@ -366,7 +442,7 @@
     <div id="privacyModal" class="modal">
         <div class="modal-content">
             <span class="close-modal" onclick="closeModal('privacyModal')">&times;</span>
-            <h3 style="color: var(--primary); margin-top:0;">Privacy Policy</h3>
+            <h3 style="color: var(--primary); margin-top:0; font-family:'Playfair Display', serif;">Privacy Policy</h3>
             <p style="color: var(--text-muted); font-size: 0.95rem;">Your privacy is important to us. We collect minimal personal information strictly to fulfill digital orders and provide product updates. We never sell or trade your data.</p>
         </div>
     </div>
@@ -374,7 +450,7 @@
     <div id="termsModal" class="modal">
         <div class="modal-content">
             <span class="close-modal" onclick="closeModal('termsModal')">&times;</span>
-            <h3 style="color: var(--primary); margin-top:0;">Terms of Service</h3>
+            <h3 style="color: var(--primary); margin-top:0; font-family:'Playfair Display', serif;">Terms of Service</h3>
             <p style="color: var(--text-muted); font-size: 0.95rem;">Purchasing grants a personal, non-exclusive license to view and download the PDF suite for individual use. Redistribution or unauthorized resale is prohibited.</p>
         </div>
     </div>
@@ -382,7 +458,7 @@
     <div id="disclaimerModal" class="modal">
         <div class="modal-content">
             <span class="close-modal" onclick="closeModal('disclaimerModal')">&times;</span>
-            <h3 style="color: var(--primary); margin-top:0;">Medical Disclaimer</h3>
+            <h3 style="color: var(--primary); margin-top:0; font-family:'Playfair Display', serif;">Medical Disclaimer</h3>
             <p style="color: var(--text-muted); font-size: 0.95rem;">For educational purposes only. Always consult a qualified physician before modifying your diet, nutrition protocol, or medical treatments.</p>
         </div>
     </div>

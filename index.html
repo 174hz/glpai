@@ -66,7 +66,6 @@
             overflow: hidden;
         }
 
-        /* Subtle Ambient Light Orb in Header */
         header::before {
             content: "";
             position: absolute;
@@ -167,6 +166,27 @@
             box-shadow: 0 16px 42px rgba(27, 77, 62, 0.09);
         }
 
+        /* E-Book Mockup Styling */
+        .ebook-cover-container {
+            max-width: 320px;
+            margin: 0 auto 2rem auto;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(26, 46, 38, 0.15);
+            border: 1px solid var(--border-color);
+            transition: transform 0.3s ease;
+        }
+
+        .ebook-cover-container:hover {
+            transform: translateY(-4px);
+        }
+
+        .ebook-cover-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
         .content-block h2 {
             color: var(--primary);
             font-size: 2rem;
@@ -261,7 +281,6 @@
             transform: scale(0.97);
         }
 
-        /* High-Conversion Shimmer CTA Button */
         .btn-primary {
             background: linear-gradient(135deg, var(--primary) 0%, #23614E 100%);
             color: #FFFFFF;
@@ -282,7 +301,6 @@
             overflow: hidden;
         }
 
-        /* Light Sheen Sweep Animation */
         .btn-primary::after {
             content: "";
             position: absolute;
@@ -319,7 +337,6 @@
             margin-top: 2rem;
         }
 
-        /* Interactive Cards */
         .card-item {
             background: #F9FBF9;
             padding: 2rem;
@@ -383,7 +400,6 @@
             font-family: -apple-system, BlinkMacSystemFont, sans-serif;
         }
 
-        /* Sticky Floating Bottom Bar */
         .sticky-bar {
             position: fixed;
             bottom: -100px;
@@ -513,9 +529,15 @@
 
     <div class="container">
         
-        <!-- BLOCK 1: Hero Offer & Pricing -->
+        <!-- BLOCK 1: Hero Offer, Exact Title & E-Book Cover -->
         <section class="content-block reveal active" id="hero-offer">
-            <h2>The Ultimate 4-in-1 Elite Catalog Bundle</h2>
+            
+            <!-- E-Book Cover Image Linked to Shopify CDN -->
+            <div class="ebook-cover-container">
+                <img src="https://cdn.shopify.com/s/files/1/1031/3908/2539/files/GLP-1BundleLogo1.jpg?v=1794328726" alt="The Natural GLP-1 Reset: Ultimate Elite Catalog Bundle (4-in-1 Suite) Cover">
+            </div>
+
+            <h2>The Natural GLP-1 Reset: Ultimate Elite Catalog Bundle (4-in-1 Suite)</h2>
             <p>Explore peer-reviewed educational insights on native L-cell support and GPCR gut receptors designed to promote foundational wellness.</p>
             
             <div class="pricing-box">
@@ -666,7 +688,6 @@
     </div>
 
     <script>
-        // Modals
         function openModal(modalId) {
             document.getElementById(modalId).style.display = 'flex';
         }
@@ -679,7 +700,6 @@
             }
         }
 
-        // One-Click Copy Promo Code
         function copyPromoCode(el) {
             navigator.clipboard.writeText('GLP-1RESET50');
             const originalText = el.innerText;
@@ -691,7 +711,6 @@
             }, 1600);
         }
 
-        // Scroll Reveal Observer & Sticky Bar Trigger
         document.addEventListener("DOMContentLoaded", () => {
             const reveals = document.querySelectorAll('.reveal');
             const stickyBar = document.getElementById('stickyBar');
